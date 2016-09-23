@@ -1,6 +1,10 @@
 {
   "name": "embark-file-processor",
   "version": "1.0.0",
+  "engines": {
+    "node": "v6.6.0",
+    "npm": "3.10.8"
+  },
   "description": "Embark File Processor",
   "author": "Embark <hello@embark.com>",
   "license": "UNLICENSED",
