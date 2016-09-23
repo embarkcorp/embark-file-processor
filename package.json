@@ -1,0 +1,26 @@
+{
+  "name": "embark-file-processor",
+  "version": "1.0.0",
+  "description": "Embark File Processor",
+  "author": "Embark <hello@embark.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embarkcorp/embark-file-processor.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "mocha --watch"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.0.2"
+  },
+  "dependencies": {
+    "eslint": "3.5.0",
+    "eslint-config-standard": "6.0.1",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-standard": "2.0.0"
+  }
+}
