@@ -9,13 +9,19 @@
     "url": "git+https://github.com/embarkcorp/embark-file-processor.git"
   },
   "scripts": {
-    "test": "mocha",
-    "test:watch": "mocha --watch"
+    "test": "npm-run-all --parallel lint unittest",
+    "test:watch": "npm-run-all --parallel lint:watch unittest:watch",
+    "unittest": "mocha",
+    "unittest:watch": "mocha --watch",
+    "lint": "esw .",
+    "lint:watch": "esw . --watch"
   },
   "main": "index.js",
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "3.0.2"
+    "eslint-watch": "2.1.14",
+    "mocha": "3.0.2",
+    "npm-run-all": "3.1.0"
   },
   "dependencies": {
     "eslint": "3.5.0",
